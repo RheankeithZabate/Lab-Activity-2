@@ -32,11 +32,12 @@ public class Main {
 
         System.out.println("\n--- 3. Polymorphic Array ---");
 
-        Vehicle[] vehicles = {
-            new Car("Ford", "Mustang", 1965, 2),
-            new Motorcycle("Honda", "Click", 2006, "Automatic"),
-            new Truck("Ford", "F-150", 2023, 6)
+            Vehicle[] vehicles = {
+            new Car("Honda", "Civiv", 2015, 2),
+            new Motorcycle("Suzuki", "Raider J Crossover", 2022, "Manual"),
+            new Truck("Mitsubishi", "Canter", 2020, 6)
         };
+
 
         for(Vehicle currentVehicle : vehicles){
             printDetails(currentVehicle);
