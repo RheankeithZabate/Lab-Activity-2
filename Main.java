@@ -6,6 +6,13 @@ public class Main {
     
     public static void printDetails(Vehicle vehicle){
         vehicle.displayInfo();
+        
+        System.out.println("Age: " + vehicle.calculateAge());
+        System.out.println("Vintage: " + vehicle.isVintage());
+        vehicle.moveForward();
+        vehicle.moveBackward();
+        vehicle.moveLeft();
+        vehicle.moveRight();
     }
 
     public static void main(String[] args) {
@@ -25,7 +32,7 @@ public class Main {
         Car car = new Car("Ford", "Mustang", 1965, 2);
         Motorcycle motor = new Motorcycle("Honda", "Click", 2006, "Automatic");
         Truck truck = new Truck("Ford", "F-150", 2023, 6);
-
+        
         printDetails(car);
         System.out.println();
         
@@ -37,17 +44,12 @@ public class Main {
 
         System.out.println("\n--- 3. Polymorphic Array ---");
 
-            Vehicle[] vehicles = {
+        Vehicle[] vehicles = {
             new Car("Honda", "Civiv", 2015, 2),
             new Motorcycle("Suzuki", "Raider J Crossover", 2022, "Manual"),
             new Truck("Mitsubishi", "Canter", 2020, 6)
         };
 
-<<<<<<< HEAD
-
-        for(Vehicle currentVehicle : vehicles){
-            printDetails(currentVehicle);
-=======
        Printer printer = new Printer();
 
         Serviceable[] serviceables = {
@@ -56,7 +58,6 @@ public class Main {
 
         for (Serviceable item : serviceables) {
             performService(item);
->>>>>>> 2ec41b2 (Implement interfaces and serviceable classes)
             System.out.println();
         }
     }

@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-public class Car extends Vehicle {
-      private int numberofDoors;
-      
-      
-      public Car(
-          String brand,
-          String model,
-          int year,
-          int numberofDoors
-       ) {
-            super(brand, model, year);
-            this.numberofDoors = numberofDoors;
-
-      }
-      @Override
-      public void displayInfo() {
-            super.displayInfo();
-            System.out.println("Doors:" + numberofDoors);
-      }
-    }        
-=======
 public class Car extends Vehicle implements Serviceable {
 
     private int numberOfDoors;
@@ -70,4 +48,3 @@ public class Car extends Vehicle implements Serviceable {
         System.out.println("A car requires a fleet maintenance");
     }
 }
->>>>>>> 2ec41b2 (Implement interfaces and serviceable classes)

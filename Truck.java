@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-public class Truck extends Vehicle{
-      private int numberofWheels;
-      
-      
-      public Truck(
-          String brand,
-          String model,
-          int year,
-          int numberofWheels
-       ) {
-            super(brand, model, year);
-            this.numberofWheels = numberofWheels;
-
-      }
-      
-      @Override
-      public void displayInfo() {
-            super.displayInfo();
-            System.out.println("Number of Wheels:" + numberofWheels);
-      }
-    }        
-=======
 public class Truck extends Vehicle implements Serviceable {
 
     private int numberOfWheels;
@@ -71,4 +48,3 @@ public class Truck extends Vehicle implements Serviceable {
   }              
 
 }
->>>>>>> 2ec41b2 (Implement interfaces and serviceable classes)

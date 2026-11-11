@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-public class Motorcycle extends Vehicle{
-      private String engineType;
-      
-      
-      public Motorcycle(
-          String brand,
-          String model,
-          int year,
-          String engineType
-       ) {
-            super(brand, model, year);
-            this.engineType = engineType;
-
-      }
-      
-      @Override
-      public void displayInfo() {
-            super.displayInfo();
-            System.out.println("Engine Type:" + engineType);
-      }
-    }        
-=======
 public class Motorcycle extends Vehicle implements Serviceable {
 
     private String engineType;
@@ -69,4 +46,3 @@ public class Motorcycle extends Vehicle implements Serviceable {
   }              
 
 }
->>>>>>> 2ec41b2 (Implement interfaces and serviceable classes)
