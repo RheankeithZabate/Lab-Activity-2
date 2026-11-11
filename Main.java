@@ -1,4 +1,9 @@
 public class Main {
+
+ public static void performService(Serviceable item){
+       item.service();
+    }
+    
     public static void printDetails(Vehicle vehicle){
         vehicle.displayInfo();
     }
@@ -38,10 +43,21 @@ public class Main {
             new Truck("Mitsubishi", "Canter", 2020, 6)
         };
 
+<<<<<<< HEAD
 
         for(Vehicle currentVehicle : vehicles){
             printDetails(currentVehicle);
+=======
+       Printer printer = new Printer();
+
+        Serviceable[] serviceables = {
+            car, motor, truck, printer
+        };
+
+        for (Serviceable item : serviceables) {
+            performService(item);
+>>>>>>> 2ec41b2 (Implement interfaces and serviceable classes)
             System.out.println();
         }
-    }  
+    }
 }
